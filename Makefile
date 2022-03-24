@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mcherki <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: mcherki <mcherki@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/12 16:05:51 by mcherki           #+#    #+#              #
-#    Updated: 2021/12/12 16:05:56 by mcherki          ###   ########.fr        #
+#    Updated: 2022/03/24 14:01:03 by mcherki          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,9 @@ AR = ar rcs
 
 NAME = libftprintf.a
 
-SRC	= ft_printf.c ft_putlowerhex.c ft_putupperhex.c ft_putunsigned.c ft_putchar.c \
-		ft_putstr.c ft_putpointer.c ft_putnbr.c
+SRC	= printf.c\
+	hex.c\
+	nbr_str.c 
 
 OBJ	= $(SRC:.c=.o)
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcherki <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: mcherki <mcherki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/12 15:54:45 by mcherki           #+#    #+#             */
-/*   Updated: 2021/12/18 21:30:40 by mcherki          ###   ########.fr       */
+/*   Created: 2022/03/10 20:13:44 by mcherki           #+#    #+#             */
+/*   Updated: 2022/03/13 20:40:33 by mcherki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,13 @@
 # include <stdarg.h>
 # include <stdio.h>
 
-# define LOW_HEX "0123456789abcdef"
-# define UPPER_HEX "0123456789ABCDEF"
-# define DIGITS "0123456789"
-
 int	ft_printf(const char *str, ...);
-int	ft_putupperhex(unsigned int ptr);
-int	ft_putlowerhex(unsigned int ptr);
-int	ft_putpointer(unsigned long ptr);
-int	ft_unsignednbr(unsigned int n);
-int	ft_putnbr(int n);
-int	ft_putstr(char *s);
+int	format(va_list ap, char c);
 int	ft_putchar(char c);
+int	ft_putstr(char *str);
+int	ft_putnbr(int num);
+int	ft_putlhex(unsigned long num);
+int	ft_putuhex(unsigned int num);
+int	ft_putdmc(unsigned int num);
 
 #endif
